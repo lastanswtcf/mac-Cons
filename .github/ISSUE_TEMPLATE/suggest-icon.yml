@@ -1,0 +1,21 @@
+name: "Suggest Icon"
+description: "Here you can suggest new icons."
+title: "[Suggest Icon]: "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: app-name
+    attributes:
+      label: "Application Name"
+      description: "The name of the application for the icon."
+      placeholder: "e.g., Spotify, Discord"
+    validations:
+      required: true
+  - type: input
+    id: icon-link
+    attributes:
+      label: "Optional: Link to Image or Attached Image"
+      description: "Provide a link to the icon image or logo."
+      placeholder: "https://..."
+    validations:
+      required: false
