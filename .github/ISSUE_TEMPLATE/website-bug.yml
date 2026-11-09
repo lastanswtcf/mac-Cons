@@ -1,0 +1,42 @@
+name: "Website Bug"
+description: "Here you can report bugs related to the website."
+title: "[Website Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: bug-title
+    attributes:
+      label: "Title"
+      description: "Short summary of the bug."
+      placeholder: "e.g., Navigation bar overlaps on mobile"
+    validations:
+      required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: "Describe the bug"
+      description: "Detailed description of what went wrong and how to reproduce it."
+      placeholder: "Explain the issue clearly..."
+    validations:
+      required: true
+  - type: textarea
+    id: bug-image
+    attributes:
+      label: "Attach Screenshot / Image Link"
+      description: "Provide a direct link or upload a screenshot of the bug."
+      placeholder: "Paste image link or markdown here..."
+    validations:
+      required: false
+  - type: dropdown
+    id: device-type
+    attributes:
+      label: "Device"
+      description: "Select the device or platform you are using to access the website."
+      options:
+        - "iOS"
+        - "Android"
+        - "Website / Desktop Browser"
+        - "Other Mobile"
+        - "Other Desktop"
+    validations:
+      required: true
